@@ -27,25 +27,35 @@ This REST API generates an invoice for a list of purchased items. It applies spe
     "unitPrice": 20
   }
 ]
-
-
-### Request Body
-
+```
+### Response Body
 ```json
-[
-  {
-    "itemName": "Laptop",
-    "category": "electronics",
-    "quantity": 5,
-    "unitPrice": 1000
-  },
-  {
-    "itemName": "T-Shirt",
-    "category": "clothing",
-    "quantity": 2,
-    "unitPrice": 20
-  }
-]
+{
+  "invoice": [
+    {
+      "itemName": "Laptop",
+      "category": "electronics",
+      "quantity": 5,
+      "unitPrice": 1000,
+      "lineTotal": 5000,
+      "discount": 500,
+      "tax": 405,
+      "total": 4905
+    },
+    {
+      "itemName": "T-Shirt",
+      "category": "clothing",
+      "quantity": 2,
+      "unitPrice": 50,
+      "lineTotal": 100,
+      "discount": 0,
+      "tax": 5,
+      "total": 105
+    }
+  ],
+  "grandTotal": 5010
+}
+```
 
 
 
