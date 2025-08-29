@@ -5,7 +5,7 @@ This REST API generates an invoice for a list of purchased items. It applies spe
 
 ---
 
-## 📌 Endpoint
+## Endpoint
 
 **POST** `/orders/invoice`
 
