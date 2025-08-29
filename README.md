@@ -27,30 +27,26 @@ This REST API generates an invoice for a list of purchased items. It applies spe
     "unitPrice": 20
   }
 ]
-### Reponse
-{
-  "invoice": [
-    {
-      "itemName": "Laptop",
-      "quantity": 5,
-      "unitPrice": 1000,
-      "lineTotal": 5000,
-      "discount": 500,
-      "tax": 450,
-      "total": 4950
-    },
-    {
-      "itemName": "T-Shirt",
-      "quantity": 2,
-      "unitPrice": 20,
-      "lineTotal": 40,
-      "discount": 0,
-      "tax": 2,
-      "total": 42
-    }
-  ],
-  "grandTotal": 4992
-}
+
+
+### Request Body
+
+```json
+[
+  {
+    "itemName": "Laptop",
+    "category": "electronics",
+    "quantity": 5,
+    "unitPrice": 1000
+  },
+  {
+    "itemName": "T-Shirt",
+    "category": "clothing",
+    "quantity": 2,
+    "unitPrice": 20
+  }
+]
+
 
 
 | Rule No. | Description                                         | Covered By Test Method                     |
