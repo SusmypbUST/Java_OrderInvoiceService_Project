@@ -70,19 +70,19 @@ This REST API generates an invoice for a list of purchased items. It applies spe
 | 5        | Reject items with unitPrice <= 0 or quantity <= 0   | `testInvalidItemsAreFilteredOut`           |
 | 6        | Grand total = sum of discounted + taxed line totals | `testGrandTotalCalculation`                |
 
-### Technologies Used
+## Technologies Used
 
--Java 17+
+-> Java 17+
 
--Spring Boot
+-> Spring Boot
 
--Maven / Gradle
+-> Maven / Gradle
 
--JUnit (for testing)
+-> JUnit (for testing)
 
--REST (JSON API)
+-> REST (JSON API)
 
--Postman
+-> Postman
 
 
 ## Project Components
